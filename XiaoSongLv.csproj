@@ -1,0 +1,12 @@
+<Project Sdk="Godot.NET.Sdk/4.6.1">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'android' ">net9.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <!-- 关闭 MSBuild 自动生成 AssemblyInfo + TargetFramework 属性：杜绝“特性重复”（CS0579） -->
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <!-- 排除 Godot 生成的 .godot 中间目录，避免其下的 AssemblyInfo 等被当作源文件重复编译 -->
+    <DefaultItemExcludes>$(DefaultItemExcludes);.godot/**</DefaultItemExcludes>
+  </PropertyGroup>
+</Project>

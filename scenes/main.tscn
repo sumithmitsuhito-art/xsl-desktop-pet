@@ -1,0 +1,139 @@
+[gd_scene format=3 uid="uid://dmbnxiquqfvx"]
+
+[ext_resource type="Script" uid="uid://ckc6ntsouthmk" path="res://script/main.gd" id="1_o5qli"]
+[ext_resource type="Texture2D" uid="uid://cj77fy33hx8re" path="res://assets/animations/cheer/cheer_1.png" id="2_yc10j"]
+[ext_resource type="Texture2D" uid="uid://8pxhjkufpqij" path="res://assets/animations/cheer/cheer_2.png" id="3_jscy8"]
+[ext_resource type="Texture2D" uid="uid://bvf2juvkkrxmj" path="res://assets/animations/cheer/cheer_3.png" id="4_pm3ni"]
+[ext_resource type="Texture2D" uid="uid://n7ox1w5ia8di" path="res://assets/animations/cry/cry_1.png" id="5_y6deb"]
+[ext_resource type="Texture2D" uid="uid://cacc46lfhm88d" path="res://assets/animations/cry/cry_2.png" id="6_og1vs"]
+[ext_resource type="Texture2D" uid="uid://tjxdy4vf7l8k" path="res://assets/animations/cry/cry_3.png" id="7_2wyq8"]
+[ext_resource type="Texture2D" uid="uid://60ycdqoeqkul" path="res://assets/animations/lifted/lifted_1.png" id="10_yq6so"]
+[ext_resource type="Texture2D" uid="uid://coaidnl8ns4fl" path="res://assets/animations/lifted/lifted_2.png" id="11_fv21b"]
+[ext_resource type="Texture2D" uid="uid://dh8n1onojmiqu" path="res://assets/animations/lifted/lifted_3.png" id="12_tel4y"]
+[ext_resource type="Texture2D" uid="uid://ck7en2dvcln23" path="res://assets/animations/scary/scary_1.png" id="13_qkpxi"]
+[ext_resource type="Texture2D" uid="uid://4g77wcqag3n4" path="res://assets/animations/scary/scary_2.png" id="14_5q0nq"]
+[ext_resource type="Texture2D" uid="uid://d0o6biva0k2am" path="res://assets/animations/scary/scary_3.png" id="15_dgi5k"]
+[ext_resource type="Texture2D" uid="uid://nltv17hb7i57" path="res://assets/animations/shy/shy_1.png" id="16_j8jky"]
+[ext_resource type="Texture2D" uid="uid://lr5dcfwsant8" path="res://assets/animations/shy/shy_2.png" id="17_kmb1v"]
+[ext_resource type="Texture2D" uid="uid://bj7hyd1cxkde6" path="res://assets/animations/shy/shy_3.png" id="18_fuf3a"]
+[ext_resource type="Texture2D" uid="uid://lu8q8veifoxd" path="res://assets/animations/walk/walk_1.png" id="19_pibwh"]
+[ext_resource type="Texture2D" uid="uid://c6yt4j30tu8ns" path="res://assets/animations/sleepy/sleepy_1.png" id="19_y6deb"]
+[ext_resource type="Texture2D" uid="uid://dw045sbeko3hj" path="res://assets/animations/walk/walk_2.png" id="20_c6pm6"]
+[ext_resource type="Texture2D" uid="uid://doa265ewkk36j" path="res://assets/animations/sleepy/sleepy_2.png" id="20_og1vs"]
+[ext_resource type="Texture2D" uid="uid://cacksto7f4jle" path="res://assets/animations/sleepy/sleepy_3.png" id="21_2wyq8"]
+[ext_resource type="Texture2D" uid="uid://2pmdrpv352x" path="res://assets/animations/walk/walk_3.png" id="21_5he1u"]
+[ext_resource type="Script" uid="uid://ckjhxhn3ys7me" path="res://GlobalKeyboardHook.cs" id="23_pm3ni"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5poiv"]
+animations = [{
+"frames": [{
+"duration": 1.5,
+"texture": ExtResource("2_yc10j")
+}, {
+"duration": 1.5,
+"texture": ExtResource("3_jscy8")
+}, {
+"duration": 1.5,
+"texture": ExtResource("4_pm3ni")
+}],
+"loop": false,
+"name": &"cheer",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.5,
+"texture": ExtResource("5_y6deb")
+}, {
+"duration": 3.0,
+"texture": ExtResource("6_og1vs")
+}, {
+"duration": 1.5,
+"texture": ExtResource("7_2wyq8")
+}],
+"loop": false,
+"name": &"cry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("10_yq6so")
+}, {
+"duration": 2.0,
+"texture": ExtResource("11_fv21b")
+}, {
+"duration": 2.0,
+"texture": ExtResource("12_tel4y")
+}],
+"loop": false,
+"name": &"lifted",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("13_qkpxi")
+}, {
+"duration": 2.0,
+"texture": ExtResource("14_5q0nq")
+}, {
+"duration": 2.0,
+"texture": ExtResource("15_dgi5k")
+}],
+"loop": false,
+"name": &"scary",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("16_j8jky")
+}, {
+"duration": 2.0,
+"texture": ExtResource("17_kmb1v")
+}, {
+"duration": 2.0,
+"texture": ExtResource("18_fuf3a")
+}],
+"loop": false,
+"name": &"shy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 2.5,
+"texture": ExtResource("19_y6deb")
+}, {
+"duration": 3.0,
+"texture": ExtResource("20_og1vs")
+}, {
+"duration": 2.0,
+"texture": ExtResource("21_2wyq8")
+}],
+"loop": false,
+"name": &"sleepy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.5,
+"texture": ExtResource("19_pibwh")
+}, {
+"duration": 1.5,
+"texture": ExtResource("20_c6pm6")
+}, {
+"duration": 1.5,
+"texture": ExtResource("21_5he1u")
+}],
+"loop": false,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="Main" type="Node2D" unique_id=1281102137]
+script = ExtResource("1_o5qli")
+
+[node name="Character" type="AnimatedSprite2D" parent="." unique_id=208756524]
+position = Vector2(155, 129)
+sprite_frames = SubResource("SpriteFrames_5poiv")
+animation = &"cheer"
+frame_progress = 0.17282817
+
+[node name="GlobalKeyboardHook" type="Node" parent="." unique_id=831482048]
+script = ExtResource("23_pm3ni")
+metadata/_custom_type_script = "uid://ckjhxhn3ys7me"

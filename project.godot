@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="小松绿桌宠"
+run/main_scene="uid://dmbnxiquqfvx"
+config/features=PackedStringArray("4.6", "C#", "Forward Plus")
+config/icon="uid://dwd634dxbhols"
+
+[display]
+
+window/size/viewport_width=324
+window/size/viewport_height=324
+window/size/resizable=false
+window/size/borderless=true
+window/size/always_on_top=true
+window/size/transparent=true
+window/per_pixel_transparency/allowed=true
+
+[dotnet]
+
+project/assembly_name="XiaoSongLv"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+viewport/transparent_background=true
